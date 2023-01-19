@@ -1,6 +1,10 @@
 # [Project name](deployed link)
 
-Short description
+*Insert Project Name Here*, based on Dan Lok's [5 Bucket Money Management Concept](https://medium.datadriveninvestor.com/how-to-manage-money-5b490e9d3d63), is a finance calculator that displays a breakdown of annual spending.
+
+Dan Lok's concept was designed to teach the user the habit of managing money as a long term solution. This is done by breaking our salaries into 5 different buckets; Expenses, Emergency, Investment, Learning and Fun. The suggestion is to commit 60% of our salary to the Expenses bucket and 10% in each of the others. However, these percentages can be adjusted to suit bigger and smaller salaries.
+
+Users need to enter their income, select their percentage ratio and the finance calculator displays the amount of money to put in to each bucket.
 
 ![Mockup image](Mockup imagelink)
 
