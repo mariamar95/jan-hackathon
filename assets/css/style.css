@@ -2,9 +2,7 @@
 header {
   background-color: azure;
 }
-main {
-  background-color: rgb(196, 250, 250);
-}
+
 footer {
   background-color: rgb(153, 250, 250);
 }
@@ -14,6 +12,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  background-color: #f2f2fc;
 }
 
 main {
