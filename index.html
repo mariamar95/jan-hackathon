@@ -7,34 +7,63 @@
     <!-- favicon -->
     <!-- Source: https://www.clipartmax.com/download/m2H7i8A0m2G6G6H7_money-flat-icon-ecoverauthority-logo-homepage/ -->
     <!-- Converted using https://favicon.io/favicon-converter/ -->
+    <link rel="shortcut icon" href="./assets/imgs/favicon_io/favicon-32x32.png" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="./assets/imgs/favicon_io/apple-touch-icon.png"
-    >
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/imgs/favicon_io/favicon-32x32.png"
-    >
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
       href="./assets/imgs/favicon_io/favicon-16x16.png"
-    >
-    <link rel="manifest" href="./assets/imgs/favicon_io/site.webmanifest">
+    />
+    <link rel="manifest" href="./assets/imgs/favicon_io/site.webmanifest" />
     <title>My Manager - Home</title>
     <!-- Materialize - Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <header>HEADER</header>
+    <header>
+      <!-- Dropdown Structure -->
+      <ul id="dropdown-btn" class="dropdown-content">
+        <li><a href="#!">Menu 1</a></li>
+        <li><a href="#!">Menu 2</a></li>
+        <!-- <li class="divider"></li> -->
+        <li><a href="#!">Menu 3</a></li>
+      </ul>
+      <nav>
+        <div class="nav-wrapper">
+          <a
+            href="index.html"
+            class="brand-logo">My Manager</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="teams.html">Teams</a></li>
+            <li><a href="tips.html">Tips</a></li>
+            <!-- Dropdown Trigger -->
+            <li>
+              <a class="dropdown-trigger" href="#!" data-target="dropdown-btn">More<i class="material-icons right"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <main>MAIN</main>
     <footer>FOOTER</footer>
-    <script src="./assets/scripts/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="assets/scripts/script.js"></script>
     <!-- Materialize - Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
