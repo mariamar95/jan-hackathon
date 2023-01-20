@@ -19,3 +19,14 @@ body {
 main {
   flex: 1 0 auto;
 }
+
+
+/* Team Page */
+.team-card img{
+  border-radius: 50% !important;
+  padding: 20px;
+}
+
+.team-card i {
+  padding: 10px;
+}
