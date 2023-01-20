@@ -1,8 +1,5 @@
-$(document).ready(function() {
-    console.log("ready!");
-    // needed for the dropdown menu item:
-    $(".dropdown-trigger").dropdown();
-});
+// Auto initialize all Materialize CSS Components
+M.AutoInit();
 
 // Assigns the variables, will eventually be moved to a input from the user.
 var chartID = "spending";
