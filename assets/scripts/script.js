@@ -13,8 +13,20 @@ var barColors = [
   "#e8c3b9",
   "#1e7145"
 ];
-// Calls the create_chart function.
-create_chart(chartID, chartName, bucketNames, bucketValues, barColors)
+
+/**
+ * Adds the canvas required to show the chart, to the HTML, in a DIV.
+ * @param chartID The ID assigned to the chart, that will be displayed in the canvas.
+ * @param canvasDiv The ID of the div, that will be the parent of the canvas.
+ */
+function add_canvas_to_html(chartId, canvasDiv) {
+    const canvasArea = document.getElementById(canvasDiv);
+    const canvas = document.createElement("canvas");
+
+    canvas.id = chartId;
+    canvasArea.appendChild(canvas);
+}
+
 /**
  * Creates a chart based on the provided attributes.
  * @param chartID The ID assigned to the chart, that will be called in the HTML.
@@ -41,3 +53,9 @@ function create_chart(chartID, chartName, xValues, yValues, colors) {
     }
     });
 }
+
+// Calls the add_canvas_to_html function.
+add_canvas_to_html(chartID, "chart_area")
+
+// Calls the create_chart function.
+create_chart(chartID, chartName, bucketNames, bucketValues, barColors)
