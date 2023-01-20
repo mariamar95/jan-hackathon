@@ -38,9 +38,21 @@ Users need to enter their income, select their percentage ratio and the finance 
 ---
 
 ### User Stories
+#### Primary Goals:
+- To be able to use the site on different screen sizes (responsiveness).
+- To see an easy to read breakdown of my spending (chart.JS)
+- To use an accessible site that accounts for all users (colour-blindness, screen readers).
+
+#### Secondary Goals:
+- I want to be able to customise the label names on the charts.
+- I want to see a comparison of my spending / saving compared to the recommendations (5 bucket principal).
+
+#### Tertiary Goals:
+- I want to be able to save the charts to view later (download as PDF).
+- I want to be able to use this site in a range of countries (currency converter API)
+- I want to be able to access guides on saving and spending less.
 
 [Back to top](#Table-of-contents)
-
 ---
 
 ### Wireframes
