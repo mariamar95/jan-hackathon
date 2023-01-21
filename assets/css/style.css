@@ -16,6 +16,15 @@ main {
   flex: 1 0 auto;
 }
 
+.title {
+  font-family: Playfair, 'Times New Roman', Times;
+  color: #332a7c;
+}
+
+p {
+  font-family: Open Sans, 'Times New Roman', Times;
+}
+
 /* Navigation Bar */
 nav {
   background-color: #ffff;
@@ -89,6 +98,7 @@ nav a {
 
 .team-card {
   border-radius: 10px;
+  box-shadow: #e3e3f6;
 }
 
 .team-card span {
@@ -97,15 +107,8 @@ nav a {
 
 .team-card a {
   color: #332a7c !important;
-  padding: 5px!important;
+  margin: 0px !important;
 }
 
-.title {
-  font-family: Playfair, 'Times New Roman', Times;
-  color: #332a7c;
-}
 
-p {
-  font-family: Open Sans, 'Times New Roman', Times;
-}
 
