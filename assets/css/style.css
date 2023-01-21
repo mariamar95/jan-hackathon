@@ -109,3 +109,11 @@ p {
   font-family: Open Sans, 'Times New Roman', Times;
 }
 
+/* Index Page */
+.bucketimg {
+  object-fit: contain;
+  height:100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
