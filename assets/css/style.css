@@ -129,3 +129,9 @@ nav a {
   background: #332a7c;
   border-radius: 35px;
 }
+
+.btn-red {
+  color: fff;
+  background: #7c2a2a;
+  border-radius: 35px;
+}
