@@ -99,6 +99,7 @@ nav a {
 .team-card {
   border-radius: 10px;
   box-shadow: #e3e3f6;
+  box-shadow: 5px 10px #342a7c38;
 }
 
 .team-card span {
