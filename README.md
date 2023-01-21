@@ -1,6 +1,9 @@
-# [Project name](deployed link)
+[5 Bucket Money Management](https://mariamar95.github.io/jan-hackathon/)
 
-*Insert Project Name*, based on Dan Lok's [5 Bucket Money Management Concept](https://medium.datadriveninvestor.com/how-to-manage-money-5b490e9d3d63), is a finance calculator that displays a breakdown of annual spending.
+During our brainstorm meeting, we analyzed the strengths of the team and we discovered that we are stronger at front-end development. Which led us to the decision to focus primarily on a frontend based project to make sure that everyone from the team is included and can contribute to the project.
+As a team, we discussed few different ideas for this project and we all decided that we would like to take the 5 Bucket Money Management Concept and turn it into real life and fully usable project.
+
+*Insert Project Name Here*, based on Dan Lok's [5 Bucket Money Management Concept](https://medium.datadriveninvestor.com/how-to-manage-money-5b490e9d3d63), is a finance calculator that displays a breakdown of annual spending.
 
 Dan Lok's concept was designed to teach the user the habit of managing money as a long term solution. This is done by breaking our salaries into 5 different buckets; Expenses, Emergency, Investment, Learning and Fun. The suggestion is to commit 60% of our salary to the Expenses bucket and 10% in each of the others. However, these percentages can be adjusted to suit bigger and smaller salaries.
 
@@ -56,6 +59,14 @@ Users need to enter their income, select their percentage ratio and the finance 
 ---
 
 ### Wireframes
+#### Main Page <br>
+![Main page mock up design](./assets/imgs/mockups/home-page.PNG) <br>
+#### Calculator <br>
+![Calculator page mock up design](./assets/imgs/mockups/calculator.PNG) <br>
+#### Tips Page <br>
+![Tips page mock up design](./assets/imgs/mockups/tips-page.PNG) <br>
+#### About Page <br>
+![About page mock up design](./assets/imgs/mockups/about.PNG) <br>
 
 [Back to top](#Table-of-contents)
 
@@ -68,6 +79,15 @@ Users need to enter their income, select their percentage ratio and the finance 
 ---
 
 ### Style and colours
+#### Color Palette <br>
+The colour palette for this project is based on the purple colour scheme. The purple colour is considered to be a colour of creativity and imagination and complements beautifully the project idea. <br>
+Background colour #f2f2fc Ghost White <br> 
+Hero background color #ffffff White
+Text colour #332a7c Picotee Blue <br>
+Footer background #d3d3f1 and #a9a9d7 Light Periwinkle and Blue Bell <br> 
+![Color Palette Image](./assets/imgs/mockups/colors.PNG) <br>
+#### Typography
+The fonts used are [Open Sans](https://fonts.google.com/specimen/Open+Sans?query=open) and [Playfair Display](https://fonts.google.com/specimen/Playfair+Display?query=playfair) which really complement eachother and give the project professional look. 
 
 [Back to top](#Table-of-contents)
 
