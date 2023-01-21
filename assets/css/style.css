@@ -96,9 +96,11 @@ nav a {
   padding: 10px;
 }
 
-.team-card {
-  border-radius: 10px;
-  box-shadow: #e3e3f6;
+.team-card, .card-panel {
+  border-radius: 15px;
+}
+
+.shadow {
   box-shadow: 5px 10px #342a7c38;
 }
 
@@ -120,4 +122,10 @@ nav a {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  }
+}
+
+.btn-blue {
+  color: fff;
+  background: #332a7c;
+  border-radius: 35px;
+}
