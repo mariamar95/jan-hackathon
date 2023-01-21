@@ -1,5 +1,3 @@
-// Auto initialize all Materialize CSS Components
-M.AutoInit();
 
 // Assigns the variables, will eventually be moved to a input from the user.
 var chartID = "spending";
