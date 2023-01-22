@@ -1,11 +1,6 @@
 // Auto initialize all Materialize CSS Components
 M.AutoInit();
 
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
-});
-
 // Checks to see if DOM content has finished loading
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -96,13 +91,84 @@ function get_user_input() {
 
 }
 
-
-
+/**
+ * Adds a new row to the user input form. Creates a new options element and clones the other inputs in the row.
+ */
 function add_new_input() {
+
+    // Set the options for the bucket selection, first array index is the selection title.
+    bucket_options = ["Bucket", "Expenses", "Emergency", "Investment", "Learning", "Fun"]
+
+    // Get the HTML element for the first row of the form
     const formSection = document.getElementById('form-section').firstElementChild;
-    const clone = formSection.cloneNode(true);
-    console.log(clone)
-    document.getElementById('form-section').appendChild(clone);
+
+    // Copy the first row of the form
+    const row = formSection.cloneNode(false);
+
+    // Generate the select column element and children
+    selectCol = document.createElement('div');
+    select = document.createElement('select');
+    label = document.createElement('label');
+
+    // Add select column class names to set length and type
+    selectCol.classList.add('input-field');
+    selectCol.classList.add('col');
+    selectCol.classList.add('s2');
+
+    // Add the select element to the select column element
+    selectCol.appendChild(select);
+
+    // Create selection options
+    for (var i = 0; i < 6; i++) {
+
+        // Generate the option element
+        option = document.createElement("option");
+
+        // If the first option, then set it as the default option to create placeholder text
+        if (i < 1) {
+            option.setAttribute("value", "")
+            option.setAttribute("disabled", "");
+            option.setAttribute("selected", "");
+
+        // If not the first option the add the value to option
+        } else {
+            option.setAttribute("value", i);
+        }
+        
+        // Set the text for the selection option
+        option.innerText = bucket_options[i];
+        
+        // Add the options elements to the select element
+        select.appendChild(option)
+    }
+
+    // Set select label element text
+    label.innerText = "Bucket Name"
+
+    // Add the label element to the select column
+    selectCol.appendChild(label);
+
+    // Add tje select column element to the row element
+    row.appendChild(selectCol);
+
+
+    // Iterate through the label and value input elements
+    var children = formSection.children;
+    for (var i = 1; i < children.length; i++) {
+        var child = children[i];
+
+        // Clone the label name and value inputs from the HTML
+        childCol = child.cloneNode(true);
+
+        // Add the cloned inputs to the new row
+        row.appendChild(childCol);
+    }
+
+    // Add the new row to the input form
+    document.getElementById('form-section').appendChild(row);
+
+    // Initialise the new Materialize CSS components
+    M.AutoInit();
 }
 
 // Assigns the variables, will eventually be moved to a input from the user.
