@@ -162,6 +162,12 @@ function add_new_input() {
         // Clone the label name and value inputs from the HTML
         childCol = child.cloneNode(true);
 
+        // Clears the value from the input section, avoding duplication of user input.
+        childCol.children[1].value = '';
+
+        // Removes the valid class, as this will highlight the input field, even if empty.
+        childCol.children[1].classList.remove('valid');
+
         // Add the cloned inputs to the new row
         row.appendChild(childCol);
     }
