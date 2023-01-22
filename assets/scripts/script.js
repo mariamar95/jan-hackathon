@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let submitButton = document.getElementById("submit_button");
     let addButton = document.getElementById("add_button");
     let removeButton = document.getElementById("remove_button");
+    let resetButton = document.getElementById("reset_button");
 
     // Checks to see if the submit button has been clicked
     submitButton.addEventListener("click", function () {
@@ -20,9 +21,14 @@ document.addEventListener("DOMContentLoaded", function () {
         add_new_input();
     });
 
-    //Checks to see if the delete last user input row button has been clicked
+    // Checks to see if the delete last user input row button has been clicked
     removeButton.addEventListener("click", function () {
         remove_last_input();
+    });
+
+    // Checks to see if the reset button has been clicked
+    resetButton.addEventListener("click", function () {
+        reset_fields();
     });
 });
 
@@ -203,6 +209,35 @@ function remove_last_input() {
         formSection.removeChild(formSection.lastElementChild)
     }
         
+}
+
+/**
+ * Resets the user input fields when the rest button is clicked.
+ */
+function reset_fields() {
+
+    // Get element that contains the user input section
+    const formSection = document.getElementById('form-section');
+
+    // Gets the rows of the user input form
+    var rows = formSection.children;
+
+    // Iterates through the rows
+    for (var row = 0; row < rows.length; row++) {
+
+        // Gets the number of columns in the rows
+        numCols = rows[row].children.length
+
+        // Iterates through the columns
+        for (var col = 1; col < numCols; col++) {
+
+            // Clears the value of the input columns
+            rows[row].children[col].children[1].value = "";
+
+            // Removes the valid class, as this will highlight the input field, even if empty.
+            rows[row].children[col].children[1].classList.remove('valid');
+        }
+    }
 }
 
 /**
