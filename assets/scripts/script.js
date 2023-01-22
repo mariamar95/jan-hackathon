@@ -1,6 +1,11 @@
 // Auto initialize all Materialize CSS Components
 M.AutoInit();
 
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+});
+
 // Checks to see if DOM content has finished loading
 document.addEventListener("DOMContentLoaded", function () {
 

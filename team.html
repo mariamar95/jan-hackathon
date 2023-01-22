@@ -27,10 +27,9 @@
     <header>
         <nav>
             <div class="nav-wrapper">
-                <a href="index.html" class="title nav-logo">My Manager</a>
-                <!-- <ul id="nav-mobile" class="right hide-on-med-and-down"> -->
-                <ul id="nav-mobile" class="right">
-                    <!-- change icons by changing the text inside the i elements using these: https://materializecss.com/icons.html -->
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="fa-solid fa-bars"></i></a>
+                <a href="index.html" class="title brand-logo nav-logo">My Manager</a>
+                <ul class="right hide-on-med-and-down">
                     <li><a href="index.html" class="hvr-underline-from-left nav-link">Home</a></li>
                     <li><a href="calculator.html" class="hvr-underline-from-left nav-link">Calculator</a></li>
                     <li><a href="tips.html" class="hvr-underline-from-left nav-link">Tips</a></li>
@@ -39,6 +38,14 @@
                 </ul>
             </div>
         </nav>
+        <!--mobile-side-nav-->
+        <ul id="slide-out" class="sidenav">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="calculator.html" class="nav-link">Calculator</a></li>
+            <li><a href="tips.html" class="nav-link">Tips</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="team.html" class="nav-link">Team</a></li>
+        </ul>
     </header>
     <main>
         <div class="team-page">
@@ -222,7 +229,11 @@
             </div>
         </div>
     </footer>
-    <!--FontAwsesome-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- Materialize - Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="assets/scripts/script.js"></script>
+    <!--FontAwesome-->
     <script src="https://kit.fontawesome.com/1ded58b453.js" crossorigin="anonymous"></script>
 </body>
 
