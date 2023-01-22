@@ -51,6 +51,9 @@ Users need to enter their income, select their percentage ratio and the finance 
 - [Testing](#testing)
   - [Found bugs](#found-bugs)
 - [Deployment](#deployment)
+  - [**GitHub Pages**](#github-pages)
+  - [**How to deploy GitHub Pages**](#how-to-deploy-github-pages)
+  - [**Cloning the repository**](#cloning-the-repository)
 - [Credits](#credits)
   - [Content](#content)
   - [Acknowledgements](#acknowledgements)
@@ -251,6 +254,27 @@ Testing was done...
 ---
 
 ## Deployment
+### **GitHub Pages**
+The website is deployed using GitHub pages. It automatically updates new commits as they are pushed to the repository.
+
+### **How to deploy GitHub Pages**
+1. Login to my GitHub account
+2. Open the repository
+3. Click on Settings
+4. Scroll down and click on the Pages tab located on the left of the screen
+5. Under 'Source' select the main branch
+6. Wait for the page to refresh
+7. Scroll down to and locate the website link under the 'GitHub Pages' section
+
+### **Cloning the repository**
+1. Open the repository
+2. Click the Code button above the list of files
+3. Click on GitHub CLI and click on the 'copy' button to copy the URL link
+4. Open GitPod 
+5. Type 'git clone' and paste the URL link
+
+Find more [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop)
+
 
 [Back to top](#Table-of-contents)
 
