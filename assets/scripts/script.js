@@ -11,9 +11,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Checks to see if the submit button has been clicked
     submitButton.addEventListener("click", function () {
+        tableSelect = get_user_input().selects_value;
         tableLabels = get_user_input().labels_value;
         tableValue = get_user_input().values_value;
-        create_input_table("table_area", tableLabels, tableValue);
+        create_input_table("table_area", tableSelect, tableLabels, tableValue);
     });
 
     // Checks to see if the add user input row button has been clicked
@@ -78,6 +79,10 @@ function create_chart(chartID, chartName, xValues, yValues, colors) {
  * @returns An object that contains the labels and values from the input form.
  */
 function get_user_input() {
+
+    // Get HTML Collection of bucket names
+    selects = document.getElementsByClassName("select_input")
+
     // Get HTML Collection of labels
     labels = document.getElementsByClassName("label_input")
 
@@ -85,8 +90,14 @@ function get_user_input() {
     values = document.getElementsByClassName("value_input")
 
     // Creates the arrays that will store the values
-    labels_value = []
-    values_value = []
+    selects_value = [];
+    labels_value = [];
+    values_value = [];
+
+    // Transform the selects_value Collection to an array
+    Array.from(selects).forEach(function (element) {
+        selects_value.push(element.value)
+    });
 
     // Transform the labels_value Collection to an array
     Array.from(labels).forEach(function (element) {
@@ -99,6 +110,7 @@ function get_user_input() {
     });
 
     return {
+        selects_value,
         labels_value,
         values_value
     };
@@ -146,7 +158,7 @@ function add_new_input() {
 
         // If not the first option the add the value to option
         } else {
-            option.setAttribute("value", i);
+            option.setAttribute("value", bucket_options[i]);
         }
         
         // Set the text for the selection option
@@ -246,7 +258,7 @@ function reset_fields() {
  * @param labelInputs An array of the label names entered by the user.
  * @param valueInputs An array of the inputted values entered by the user.
  */
-function create_input_table(tableId, labelInputs, valueInputs) {
+function create_input_table(tableId, selectInputs, labelInputs, valueInputs) {
 
     // Get div that will contain the table element
     const tableArea = document.getElementById(tableId);
@@ -286,7 +298,7 @@ function create_input_table(tableId, labelInputs, valueInputs) {
         valueData = document.createElement("td");
 
         // Set the row values for each column
-        bucketData.innerText = "Bucket";
+        bucketData.innerText = selectInputs[row];
         labelData.innerText = labelInputs[row];
         valueData.innerText = valueInputs[row];
 
