@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         tableLabels = get_user_input().labels_value;
         tableValue = get_user_input().values_value;
         create_input_table("table_area", tableLabels, tableValue);
+        create_calc_btn();
     });
 
     // Checks to see if the add user input row button has been clicked
@@ -305,6 +306,12 @@ function create_input_table(tableId, labelInputs, valueInputs) {
 
     // Add the table element to the table area div
     tableArea.appendChild(table);
+}
+function create_calc_btn(){
+    var calc_btn = document.getElementById("calc_btn_area");
+    console.log(calc_btn);
+    calc_btn.innerHTML = '<button class="btn btn-blue z-depth-2" id="calculate_button">Calculate</button>';
+ 
 }
 
 // Assigns the variables, will eventually be moved to a input from the user.
