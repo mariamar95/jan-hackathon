@@ -6,17 +6,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let submitButton = document.getElementById("submit_button");
     let addButton = document.getElementById("add_button");
+    let removeButton = document.getElementById("remove_button");
 
-    // Checks to see if any square has been clicked
+    // Checks to see if the submit button has been clicked
     submitButton.addEventListener("click", function () {
         tableLabels = get_user_input().labels_value;
         tableValue = get_user_input().values_value;
         create_input_table("table_area", tableLabels, tableValue);
     });
 
-    // Checks to see if any square has been clicked
+    // Checks to see if the add user input row button has been clicked
     addButton.addEventListener("click", function () {
         add_new_input();
+    });
+
+    //Checks to see if the delete last user input row button has been clicked
+    removeButton.addEventListener("click", function () {
+        remove_last_input();
     });
 });
 
@@ -177,6 +183,26 @@ function add_new_input() {
 
     // Initialise the new Materialize CSS components
     M.AutoInit();
+}
+
+/**
+ * Remove the last user input row, don't allow the user to delete the first row, as this is used to create new rows.
+ */
+function remove_last_input() {
+
+    // Get element that contains the user input section
+    const formSection = document.getElementById('form-section');
+
+    // Get number of rows in the user input section
+    numRows = formSection.children.length;
+
+    // Check if there is still a remaining row, to allow new rows to be created
+    if (numRows > 1) {
+
+        // Remove the last row element
+        formSection.removeChild(formSection.lastElementChild)
+    }
+        
 }
 
 /**
