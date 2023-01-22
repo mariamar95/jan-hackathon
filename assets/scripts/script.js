@@ -4,10 +4,17 @@ M.AutoInit();
 // Checks to see if DOM content has finished loading
 document.addEventListener("DOMContentLoaded", function () {
 
-    let submitButton = document.getElementById("submit_button")
+    let submitButton = document.getElementById("submit_button");
+    let addButton = document.getElementById("add_button");
+
     // Checks to see if any square has been clicked
     submitButton.addEventListener("click", function () {
         console.log(get_user_input());
+    });
+
+    // Checks to see if any square has been clicked
+    addButton.addEventListener("click", function () {
+        add_new_input();
     });
 });
 
@@ -82,6 +89,15 @@ function get_user_input() {
         values_value
     };
 
+}
+
+
+
+function add_new_input() {
+    const formSection = document.getElementById('form-section').firstElementChild;
+    const clone = formSection.cloneNode(true);
+    console.log(clone)
+    document.getElementById('form-section').appendChild(clone);
 }
 
 // Assigns the variables, will eventually be moved to a input from the user.
