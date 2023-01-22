@@ -135,3 +135,8 @@ nav a {
   background: #7c2a2a;
   border-radius: 35px;
 }
+
+.currency-convertor {
+  padding: 2rem;
+  border-radius: 15px;
+}
