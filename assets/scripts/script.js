@@ -9,7 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Checks to see if any square has been clicked
     submitButton.addEventListener("click", function () {
-        console.log(get_user_input());
+        tableLabels = get_user_input().labels_value;
+        tableValue = get_user_input().values_value;
+        create_input_table("table_area", tableLabels, tableValue);
     });
 
     // Checks to see if any square has been clicked
@@ -169,6 +171,73 @@ function add_new_input() {
 
     // Initialise the new Materialize CSS components
     M.AutoInit();
+}
+
+/**
+ * Creates a table to display the user inputs, for each bucket, label and value.
+ * @param tableId The ID used for the HTML element that will contain the table.
+ * @param labelInputs An array of the label names entered by the user.
+ * @param valueInputs An array of the inputted values entered by the user.
+ */
+function create_input_table(tableId, labelInputs, valueInputs) {
+
+    // Get div that will contain the table element
+    const tableArea = document.getElementById(tableId);
+
+    // Remove the previous table if one existed, avoiding duplicates.
+    tableArea.innerHTML = "";
+
+    // Generate required table elements
+    const table = document.createElement("table");
+    const tableHead = document.createElement("thead");
+    const tableBody = document.createElement("tbody");
+    const headingRow = document.createElement("tr");
+    const bucketHeading = document.createElement("th");
+    const labelHeading = document.createElement("th");
+    const valueHeading = document.createElement("th");
+
+    // Set the table heading names
+    bucketHeading.innerText = "Bucket";
+    labelHeading.innerText = "Label";
+    valueHeading.innerText = "Value";
+
+    // Add the table heading elements to the table heading row element
+    headingRow.appendChild(bucketHeading);
+    headingRow.appendChild(labelHeading);
+    headingRow.appendChild(valueHeading);
+
+    // Add the table heading row element to the table heading element
+    tableHead.appendChild(headingRow);
+
+    // Iterate through rows in the input form
+    for (row in labelInputs) {
+
+        // Generate required table row elements
+        tableRow = document.createElement("tr");
+        bucketData = document.createElement("td");
+        labelData = document.createElement("td");
+        valueData = document.createElement("td");
+
+        // Set the row values for each column
+        bucketData.innerText = "Bucket";
+        labelData.innerText = labelInputs[row];
+        valueData.innerText = valueInputs[row];
+
+        // Add the column data to the table row element
+        tableRow.append(bucketData);
+        tableRow.append(labelData);
+        tableRow.append(valueData);
+
+        // Add the table row element to the table body element
+        tableBody.append(tableRow);
+    }
+
+    // Add the table head and body elements to the table element
+    table.appendChild(tableHead);
+    table.appendChild(tableBody);
+
+    // Add the table element to the table area div
+    tableArea.appendChild(table);
 }
 
 // Assigns the variables, will eventually be moved to a input from the user.
