@@ -74,6 +74,9 @@ nav a {
   right: 0;
 }
 
+.active {
+  font-size: large;
+}
 
 /* Team Page */
 .team-page {
