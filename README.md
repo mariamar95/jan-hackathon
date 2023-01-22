@@ -15,25 +15,49 @@ Users need to enter their income, select their percentage ratio and the finance 
 
 ## Table of contents
 
-- [\[Project name\](deployed link)](#project-namedeployed-link)
-  - [Table of contents](#table-of-contents)
-  - [UX](#ux)
-    - [User Stories](#user-stories)
-    - [Wireframes](#wireframes)
-    - [Database schema](#database-schema)
-    - [Style and colours](#style-and-colours)
-    - [Imagery](#Imagery)
-  - [Features](#features)
-    - [Existing Features](#existing-features)
-    - [Future Features](#future-features)
-  - [Technologies Used](#technologies-used)
-  - [Testing](#testing)
-    - [Found bugs](#found-bugs)
-  - [Deployment](#deployment)
-  - [Credits](#credits)
-    - [Content](#content)
-    - [Acknowledgements](#acknowledgements)
-  - [\*Disclaimer:](#disclaimer)
+- [Table of contents](#table-of-contents)
+- [UX](#ux)
+  - [User Stories](#user-stories)
+    - [Primary Goals:](#primary-goals)
+    - [Secondary Goals:](#secondary-goals)
+    - [Tertiary Goals:](#tertiary-goals)
+- [Back to top](#back-to-top)
+- [Wireframes](#wireframes)
+  - [Desktop](#desktop)
+    - [Main Page ](#main-page-)
+    - [Calculator ](#calculator-)
+    - [Tips Page ](#tips-page-)
+    - [About Page ](#about-page-)
+  - [Mobile](#mobile)
+    - [Main Page ](#main-page--1)
+    - [Calculator ](#calculator--1)
+    - [Tips Page ](#tips-page--1)
+    - [About Page ](#about-page--1)
+  - [Database schema](#database-schema)
+  - [Style and colours](#style-and-colours)
+    - [Color Palette ](#color-palette-)
+    - [Typography](#typography)
+  - [Imagery](#imagery)
+- [Features](#features)
+  - [Existing Features](#existing-features)
+  - [Home Page](#home-page)
+  - [Calculator Page](#calculator-page)
+  - [Tips Page](#tips-page)
+  - [About Page](#about-page)
+  - [Team Page](#team-page)
+  - [Future Features](#future-features)
+- [Technologies Used](#technologies-used)
+- [Languages](#languages)
+- [Testing](#testing)
+  - [Found bugs](#found-bugs)
+- [Deployment](#deployment)
+  - [**GitHub Pages**](#github-pages)
+  - [**How to deploy GitHub Pages**](#how-to-deploy-github-pages)
+  - [**Cloning the repository**](#cloning-the-repository)
+- [Credits](#credits)
+  - [Content](#content)
+  - [Acknowledgements](#acknowledgements)
+- [\*Disclaimer: This Project was created for January's Hackathon. It should not be taken as actual financial advice.](#disclaimer-this-project-was-created-for-januarys-hackathon-it-should-not-be-taken-as-actual-financial-advice)
 
 ---
 
@@ -193,6 +217,7 @@ The Submit button would display the user a graph showing their spendings in cate
 - [Photoshop](https://www.adobe.com/ie/products/photoshop.html) was used to create the desktop mockups and resize and export the images for web. 
 - [Coolors.co](https://coolors.co/) was used to display the colour palette
 - [Favicon.io](https://favicon.io/) was used to create the favicon for the website.
+- [Exchangerates API](https://exchangeratesapi.io/)was used for the currency converter
 
 
 ## Languages
@@ -229,6 +254,27 @@ Testing was done...
 ---
 
 ## Deployment
+### **GitHub Pages**
+The website is deployed using GitHub pages. It automatically updates new commits as they are pushed to the repository.
+
+### **How to deploy GitHub Pages**
+1. Login to my GitHub account
+2. Open the repository
+3. Click on Settings
+4. Scroll down and click on the Pages tab located on the left of the screen
+5. Under 'Source' select the main branch
+6. Wait for the page to refresh
+7. Scroll down to and locate the website link under the 'GitHub Pages' section
+
+### **Cloning the repository**
+1. Open the repository
+2. Click the Code button above the list of files
+3. Click on GitHub CLI and click on the 'copy' button to copy the URL link
+4. Open GitPod 
+5. Type 'git clone' and paste the URL link
+
+Find more [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop)
+
 
 [Back to top](#Table-of-contents)
 
@@ -236,6 +282,7 @@ Testing was done...
 
 ## Credits
 - [CSS Tricks](https://css-tricks.com/css-link-hover-effects/) was used for inspiration for the hover effect on the nav.
+- [CodeVille](https://www.youtube.com/watch?v=C-qi-z8phTM&ab_channel=CodesVille) Currency Converter
 
 ### Content
 
