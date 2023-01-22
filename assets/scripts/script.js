@@ -15,6 +15,25 @@ document.addEventListener("DOMContentLoaded", function () {
         tableLabels = get_user_input().labels_value;
         tableValue = get_user_input().values_value;
         create_input_table("table_area", tableSelect, tableLabels, tableValue);
+
+        // Assigns the chart Colours
+        var barColors = [
+            "#b91d47",
+            "#00aba9",
+            "#2b5797",
+            "#e8c3b9",
+            "#1e7145"
+        ];
+
+        // Calls the add_canvas_to_html function.
+        add_canvas_to_html("spending", "chart_area");
+        // Calls the create_chart function.
+        create_chart("spending", "Annual Spending Breakdown 2022 - 2023", selects_value, values_value, barColors);
+
+        // Calls the add_canvas_to_html function.
+        add_canvas_to_html("sample", "bucket_chart_area");
+        // Calls the create_chart function.
+        create_chart("sample", "Sample 5 bucket Spending Breakdown", ["Expenses", "Emergency", "Investment", "Learning", "Fun"], [60, 10, 10, 10, 10], barColors);
     });
 
     // Checks to see if the add user input row button has been clicked
@@ -156,14 +175,14 @@ function add_new_input() {
             option.setAttribute("disabled", "");
             option.setAttribute("selected", "");
 
-        // If not the first option the add the value to option
+            // If not the first option the add the value to option
         } else {
             option.setAttribute("value", bucket_options[i]);
         }
-        
+
         // Set the text for the selection option
         option.innerText = bucket_options[i];
-        
+
         // Add the options elements to the select element
         select.appendChild(option)
     }
@@ -220,7 +239,7 @@ function remove_last_input() {
         // Remove the last row element
         formSection.removeChild(formSection.lastElementChild)
     }
-        
+
 }
 
 /**
@@ -318,22 +337,3 @@ function create_input_table(tableId, selectInputs, labelInputs, valueInputs) {
     // Add the table element to the table area div
     tableArea.appendChild(table);
 }
-
-// Assigns the variables, will eventually be moved to a input from the user.
-var chartID = "spending";
-var chartName = "Annual Spending Breakdown 2022 - 2023";
-var bucketNames = ["Groceries", "Rent", "Travel", "Clothing", "Misc"];
-var bucketValues = [55, 49, 44, 24, 15];
-var barColors = [
-    "#b91d47",
-    "#00aba9",
-    "#2b5797",
-    "#e8c3b9",
-    "#1e7145"
-];
-
-// Calls the add_canvas_to_html function.
-add_canvas_to_html(chartID, "chart_area")
-
-// Calls the create_chart function.
-create_chart(chartID, chartName, bucketNames, bucketValues, barColors)
