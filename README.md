@@ -1,62 +1,66 @@
-[5 Bucket Money Management](https://mariamar95.github.io/jan-hackathon/)
+# [5 Bucket Calculator](https://mariamar95.github.io/jan-hackathon/)
 
-During our brainstorm meeting, we analyzed the strengths of the team and we discovered that we are stronger at front-end development. Which led us to the decision to focus primarily on a front-end based project to make sure that everyone from the team is included and can contribute to the project.
-As a team, we discussed few different ideas for this project and we all decided that we would like to take the 5 Bucket Money Management Concept and turn it into real life and fully usable project.
+The [Bucket Calculator](https://mariamar95.github.io/jan-hackathon/) App is based on Dan Lok’s 5 [Bucket Money Management Concept]( https://medium.datadriveninvestor.com/how-to-manage-money-5b490e9d3d63). 
 
-The Savvy Savers Application, based on Dan Lok's [5 Bucket Money Management Concept](https://medium.datadriveninvestor.com/how-to-manage-money-5b490e9d3d63), is a finance calculator that displays a breakdown of annual spending.
-
-Dan Lok's concept was designed to teach the user the habit of managing money as a long term solution. This is done by breaking our salaries into 5 different buckets; Expenses, Emergency, Investment, Learning and Fun. The suggestion is to commit 60% of our salary to the Expenses bucket and 10% in each of the others. However, these percentages can be adjusted to suit bigger and smaller salaries.
-
-Users need to enter their income, select their percentage ratio and the finance calculator displays the amount of money to put in to each bucket.
+His concept was designed to teach the user the habit of managing money as a long term solution. This is done by breaking the salary into 5 different buckets; Expenses, Emergency, Investment, Learning and Fun. The suggestion is to commit 60% of our salary to the Expenses bucket and 10% in each of the others. However, these percentages can be adjusted to suit bigger and smaller salaries.
 
 ![Mockup Image](./assets/imgs/mockups/responsive.PNG)
+[Deployed App](https://mariamar95.github.io/jan-hackathon/)
+
+Whilst sharing ideas and starting to brainstorm, we tried to take into consideration the skills and strengths of each team member and work on a project where everyone can get involved. We decided to build a front-end app which meant the majority of the team could contribute.
+
+Using Dan Lok’s concept we built a calculator where the user could find out how much money would go in each bucket based on their salary.
+
+We decided to the it a bit further and create a "Buckets Breakdown" calculator where the user can have a better tracking of their expenses. Once the user fills the form a chart will appear and the user can compare how their salary is distributed in the 5 buckets compared to Dan Lok's concept. 
+
 
 ---
 
 ## Table of contents
 
-- [Table of contents](#table-of-contents)
-- [UX](#ux)
-  - [User Stories](#user-stories)
-    - [Primary Goals:](#primary-goals)
-    - [Secondary Goals:](#secondary-goals)
-    - [Tertiary Goals:](#tertiary-goals)
-- [Back to top](#back-to-top)
-- [Wireframes](#wireframes)
-  - [Desktop](#desktop)
-    - [Main Page ](#main-page-)
-    - [Calculator ](#calculator-)
-    - [Tips Page ](#tips-page-)
-    - [About Page ](#about-page-)
-  - [Mobile](#mobile)
-    - [Main Page ](#main-page--1)
-    - [Calculator ](#calculator--1)
-    - [Tips Page ](#tips-page--1)
-    - [About Page ](#about-page--1)
-  - [Style and colours](#style-and-colours)
-    - [Color Palette ](#color-palette-)
-    - [Typography](#typography)
-  - [Imagery](#imagery)
-- [Features](#features)
-  - [Existing Features](#existing-features)
-  - [Home Page](#home-page)
-  - [Calculator Page](#calculator-page)
-  - [Tips Page](#tips-page)
-  - [About Page](#about-page)
-  - [Team Page](#team-page)
-  - [Future Features](#future-features)
-- [Technologies Used](#technologies-used)
-- [Languages](#languages)
-- [Testing](#testing)
-  - [Found bugs](#found-bugs)
-- [Deployment](#deployment)
-  - [**GitHub Pages**](#github-pages)
-  - [**How to deploy GitHub Pages**](#how-to-deploy-github-pages)
-  - [**Cloning the repository**](#cloning-the-repository)
-- [Credits](#credits)
-  - [Content](#content)
-  - [Acknowledgements](#acknowledgements)
-- [\*Disclaimer: This Project was created for January's Hackathon. It should not be taken as actual financial advice.](#disclaimer-this-project-was-created-for-januarys-hackathon-it-should-not-be-taken-as-actual-financial-advice)
+- [5 Bucket Calculator](#5-bucket-calculator)
+  - [Table of contents](#table-of-contents)
+  - [UX](#ux)
+    - [User Stories](#user-stories)
+      - [Primary Goals:](#primary-goals)
+      - [Secondary Goals:](#secondary-goals)
+      - [Tertiary Goals:](#tertiary-goals)
+  - [Back to top](#back-to-top)
+  - [Wireframes](#wireframes)
+    - [Desktop](#desktop)
+      - [Main Page ](#main-page-)
+      - [Calculator ](#calculator-)
+      - [Tips Page ](#tips-page-)
+      - [About Page ](#about-page-)
+    - [Mobile](#mobile)
+      - [Main Page ](#main-page--1)
+      - [Calculator ](#calculator--1)
+      - [Tips Page ](#tips-page--1)
+      - [About Page ](#about-page--1)
+    - [Style and colours](#style-and-colours)
+      - [Color Palette ](#color-palette-)
+      - [Typography](#typography)
+    - [Imagery](#imagery)
+  - [Features](#features)
+    - [Existing Features](#existing-features)
+    - [Home Page](#home-page)
+    - [Calculator Page](#calculator-page)
+    - [Tips Page](#tips-page)
+    - [About Page](#about-page)
+    - [Team Page](#team-page)
+    - [Future Features](#future-features)
+  - [Technologies Used](#technologies-used)
+  - [Languages](#languages)
+  - [Testing](#testing)
+    - [Found bugs](#found-bugs)
+  - [Deployment](#deployment)
+    - [**GitHub Pages**](#github-pages)
+    - [**How to deploy GitHub Pages**](#how-to-deploy-github-pages)
+    - [**Cloning the repository**](#cloning-the-repository)
+  - [Credits](#credits)
+    - [Content](#content)
+    - [Acknowledgements](#acknowledgements)
+  - [\*Disclaimer: This Project was created for January's Hackathon. It should not be taken as actual financial advice.](#disclaimer-this-project-was-created-for-januarys-hackathon-it-should-not-be-taken-as-actual-financial-advice)
 
 ---
 
