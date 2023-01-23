@@ -48,6 +48,16 @@
     </header>
 
     <main class="center-align container">
+        <div class="row">
+            <div class="col s12 bucket-cal">
+                <h2 class="title">5 Bucket Calculator</h2>
+                <p>Based on your monthly salary, this calculator will tell you how much money you can spend in each
+                    bucket</p>
+                <p>What is your monthly Salary: <input type="text" id="num"></p>
+                <button class="btn btn-blue" onclick="calculate()">Calculate</button>
+                <p id="result"></p>
+            </div>
+        </div>
         <div class="section">
             <div id="form-section">
                 <div class="row">
@@ -588,6 +598,7 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
     </script>
+    <script src="assets/scripts/calculator.js"></script>
     <!--Currency Converter Script-->
     <script src="assets/scripts/currency.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
