@@ -1,6 +1,6 @@
 [5 Bucket Money Management](https://mariamar95.github.io/jan-hackathon/)
 
-During our brainstorm meeting, we analyzed the strengths of the team and we discovered that we are stronger at front-end development. Which led us to the decision to focus primarily on a frontend based project to make sure that everyone from the team is included and can contribute to the project.
+During our brainstorm meeting, we analyzed the strengths of the team and we discovered that we are stronger at front-end development. Which led us to the decision to focus primarily on a front-end based project to make sure that everyone from the team is included and can contribute to the project.
 As a team, we discussed few different ideas for this project and we all decided that we would like to take the 5 Bucket Money Management Concept and turn it into real life and fully usable project.
 
 The Savvy Savers Application, based on Dan Lok's [5 Bucket Money Management Concept](https://medium.datadriveninvestor.com/how-to-manage-money-5b490e9d3d63), is a finance calculator that displays a breakdown of annual spending.
@@ -72,7 +72,7 @@ Users need to enter their income, select their percentage ratio and the finance 
 
 #### Secondary Goals:
 - I want to be able to customize the label names on the charts.
-- I want to see a comparison of my spending / saving compared to the recommendations (5 bucket principal).
+- I want to see a comparison of my spending / saving compared to the recommendations (5 Bucket Principle).
 
 #### Tertiary Goals:
 - I want to be able to save the charts to view later (download as PDF).
@@ -221,8 +221,6 @@ The Submit button would display the user a graph showing their spending in categ
 - [Materialize Framework](https://materializecss.com/) - used throughout the website for layout and styling.
 - JavaScript - was used to create functionality for the calculator.
 - [Jquery](https://jquery.com/)
-
-
 
 [Back to top](#Table-of-contents)
 
