@@ -57,7 +57,6 @@ We decided to the it a bit further and create a "Buckets Breakdown" calculator w
     - [**How to deploy GitHub Pages**](#how-to-deploy-github-pages)
     - [**Cloning the repository**](#cloning-the-repository)
   - [Credits](#credits)
-    - [Content](#content)
     - [Acknowledgements](#acknowledgements)
   - [\*Disclaimer: This Project was created for January's Hackathon. It should not be taken as actual financial advice.](#disclaimer-this-project-was-created-for-januarys-hackathon-it-should-not-be-taken-as-actual-financial-advice)
 
@@ -68,19 +67,19 @@ We decided to the it a bit further and create a "Buckets Breakdown" calculator w
 ---
 
 ### User Stories
-#### Primary Goals:
-- To be able to use the site on different screen sizes (responsiveness).
-- To see an easy to read breakdown of my spending (chart.JS)
-- To use an accessible site that accounts for all users (colour-blindness, screen readers).
+  #### Primary Goals:
+  - To be able to use the site on different screen sizes (responsiveness).
+  - To see an easy to read breakdown of my spending (chart.JS)
+  - To use an accessible site that accounts for all users (colour-blindness, screen readers).
 
-#### Secondary Goals:
-- I want to be able to customize the label names on the charts.
-- I want to see a comparison of my spending / saving compared to the recommendations (5 Bucket Principle).
+  #### Secondary Goals:
+  - I want to be able to customize the label names on the charts.
+  - I want to see a comparison of my spending / saving compared to the recommendations (5 Bucket Principle).
 
-#### Tertiary Goals:
-- I want to be able to save the charts to view later (download as PDF).
-- I want to be able to use this site in a range of countries (currency converter API)
-- I want to be able to access guides on saving and spending less.
+  #### Tertiary Goals:
+  - I want to be able to save the charts to view later (download as PDF).
+  - I want to be able to use this site in a range of countries (currency converter API)
+  - I want to be able to access guides on saving and spending less.
 
 [Back to top](#Table-of-contents)
 ---
@@ -190,9 +189,9 @@ The fonts used are [Open Sans](https://fonts.google.com/specimen/Open+Sans?query
 ### Future Features
 
 - #### Download Data
-  - Users have the option to export and download a pdf file of their data after using the calculator
+  - Users have the option to export and download a pdf file of their data after using the calculator.
 - #### User Login
-  - Users have the option to create an account where they can easily save and adjust their details
+  - Users have the option to create an account where they can easily save and adjust their details.
 - #### Convert Currency
   - Once the user has used the calculator their will have they option to automatically convert all figures to a different currency. As we did not have the time to add this functionality on the finished app, we decided to add a separate currency convertor bellow the calculators.
 
@@ -267,10 +266,9 @@ Find more [here](https://docs.github.com/en/repositories/creating-and-managing-r
     - [Source](https://www.clipartmax.com/download/m2H7i8A0m2G6G6H7_money-flat-icon-ecoverauthority-logo-homepage/ )
     - [Processed at 'favicon-converter'](https://favicon.io/favicon-converter/)
 
-### Content
 
 ### Acknowledgements
-- The Hackathon Team - Big thank you for making Hackathon happen. It was great experience. 
+- The Hackathon Team - Big thank you for making this Hackathon happen. It was great experience. 
 
 
 [Back to top](#Table-of-contents)
