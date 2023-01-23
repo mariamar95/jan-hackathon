@@ -151,10 +151,17 @@ The fonts used are [Open Sans](https://fonts.google.com/specimen/Open+Sans?query
 
 ---
 ### Calculator Page
-- The calculator consist of input fields on the left which have a drop down feature. This allows the user to select the type of bucket/category they would like to add amount to. The middle input field act as a label to the value input which is located on the right. For example the user can select from the drop down input field on the left the category expenses, then add a label rent and type in the amount on the right. This is then followed by the buttons of Submit, Reset or Add.
-The Submit button would display the user a graph showing their spending in categories. The reset button will clear the form. The add button will add another row of input. 
+- The calculator page has 3 sections:
+  1. The 5 Bucket Calculator
+      ![](assets/imgs/5bucket.png)
+      Users can enter their salary and click calculate to find out how much money has to go in each bucket based on Dan Lok's theory
+  2. The Buckets Breakdown 
+     ![](assets/imgs/bucketsbd.png)
+     Users can enter all their regular payments to track how their money is spend. Once they click calculate they will be presented with a chart of their own buckets compared to Lok's theory.
+     ![](assets/imgs/chart.png)
+  3. The Currency Convertor
+     ![](assets/imgs/currency-convertor.png)
 
-![Image of Calculator Page](./assets/imgs/mockups/features/calculator-feature.PNG)
 
 [Back to top](#Table-of-contents)
 
