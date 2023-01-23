@@ -48,8 +48,20 @@
     </header>
 
     <main class="center-align container">
+        <div class="row">
+            <div class="col s12 bucket-cal">
+                <h2 class="title">5 Bucket Calculator</h2>
+                <p>Based on your monthly salary, this calculator will tell you how much money you can spend in each
+                    bucket</p>
+                <p>What is your monthly Salary: <input type="text" id="num"></p>
+                <button class="btn btn-blue" onclick="calculate()">Calculate</button>
+                <p id="result"></p>
+            </div>
+        </div>
         <div class="section">
             <div id="form-section">
+                <h2 class="title">Buckets Breakdown</h2>
+                <p>You can use this calculator to get a more detailed breakdown of each bucket. First you need to select the bucket name. Then you can give it a label and enter the amount. For example, Expenses, Rent, 500€</p>
                 <div class="row">
                     <div class="input-field col s2">
                         <select class="select_input">
@@ -184,6 +196,7 @@
         <div class="container">
             <div class="row">
                 <h3 class="title">Currency Convertor</h3>
+                <p>Currency converter with live rates for all currencies</p>
                 <div class="card shadow currency-convertor">
                     <form action="/" id="form">
                         <div class="row">
@@ -588,6 +601,7 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
     </script>
+    <script src="assets/scripts/calculator.js"></script>
     <!--Currency Converter Script-->
     <script src="assets/scripts/currency.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>

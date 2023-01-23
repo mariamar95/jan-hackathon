@@ -145,3 +145,9 @@ nav a {
 #spending, #sample {
   margin: auto;
 }
+
+.bucket-cal {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
