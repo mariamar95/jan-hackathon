@@ -17,7 +17,7 @@ main {
 }
 
 .title {
-  font-family: Playfair, 'Times New Roman', Times;
+  font-family: Playfair, 'Times New Roman', Times !important;
   color: #332a7c;
 }
 
