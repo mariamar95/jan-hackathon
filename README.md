@@ -52,7 +52,6 @@ We decided to the it a bit further and create a "Buckets Breakdown" calculator w
   - [Technologies Used](#technologies-used)
   - [Languages](#languages)
   - [Testing](#testing)
-    - [Found bugs](#found-bugs)
   - [Deployment](#deployment)
     - [**GitHub Pages**](#github-pages)
     - [**How to deploy GitHub Pages**](#how-to-deploy-github-pages)
@@ -190,23 +189,15 @@ The fonts used are [Open Sans](https://fonts.google.com/specimen/Open+Sans?query
 ---
 ### Future Features
 
-- #### Favorite Feature 1
+- #### Download Data
+  - Users have the option to export and download a pdf file of their data after using the calculator
+- #### User Login
+  - Users have the option to create an account where they can easily save and adjust their details
+- #### Convert Currency
+  - Once the user has used the calculator their will have they option to automatically convert all figures to a different currency. As we did not have the time to add this functionality on the finished app, we decided to add a separate currency convertor bellow the calculators.
 
-[Back to top](#Table-of-contents)
-
----
-
-- #### Favorite Feature 2
-
-[Back to top](#Table-of-contents)
-
----
-
-- #### List of other future features
-
-  - ff1
-  - ff2
-  - ff3
+- #### Link your Banking App
+  - Users have the option to link their banking app and every time they make a transaction it is automatically added to their Buckets Breakdown. This makes it easier for users to keep a track of all speedings without having to manually enter it.
 
 [Back to top](#Table-of-contents)
 
@@ -239,24 +230,9 @@ The fonts used are [Open Sans](https://fonts.google.com/specimen/Open+Sans?query
 
 ## Testing
 
-Testing was done...
-
-### Found bugs
-
-- #### bug1
-
-![bug1](img/bug1)
-
-- #### bug2
-
-![bug2](img/bug2)
-
-- #### bug3
-
-![bug1](img/bug3)
+[All testing can be found here](TESTING.md)
 
 ---
-
 ## Deployment
 ### **GitHub Pages**
 The website is deployed using GitHub pages. It automatically updates new commits as they are pushed to the repository.
