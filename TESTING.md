@@ -31,15 +31,33 @@ The W3C Validator was used to validate all HTML files used in the project. The r
     - **Description:** Duplicate ID `label_name` and `money_value`.
     - **Cause:** The validation warnigns are cuased by the labels and inputs using ID's. As the DOM creates these values, the ID's are duplicated, this could be fixed by incrementing the ID number.
 ### Lighthouse
-
-
 #### Desktop Results:
+![Lighthouse Mobile](./assets/imgs/testing/lighthouse-mobile.PNG)
 
 #### Mobile Results:
-
+![Lighthouse Desktop](./assets/imgs/testing/lighthouse-desktop.PNG)
+During the testing stage we encountered unknown error in the console which did not impact the final application.
 
 ### WAVE
+Home Page:
 
+![Wave](./assets/imgs/testing/wave-home.PNG)
+
+Calculator Page:
+
+![Wave](./assets/imgs/testing/wave-calculator.PNG)
+
+Tips Page:
+
+![Wave](./assets/imgs/testing/wave-tips.PNG)
+
+About Page:
+
+![Wave](./assets/imgs/testing/wave-about.PNG)
+
+Team Page:
+
+![Wave](./assets/imgs/testing/wave-team.PNG)
 
 ## Manual Testing:
 ### User Stories Testing
