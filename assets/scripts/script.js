@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
         tableValue = get_user_input().values_value;
         create_input_table("table_area", tableSelect, tableLabels, tableValue);
 
+        sumBuckets = sum_bucket_values(tableSelect, tableValue);
+
         // Assigns the chart Colours
         var barColors = [
             "#b91d47",
@@ -28,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Calls the add_canvas_to_html function.
         add_canvas_to_html("spending", "chart_area");
         // Calls the create_chart function.
-        create_chart("spending", "Your Bucket Breakdown", selects_value, values_value, barColors);
+        create_chart("spending", "Your Bucket Breakdown", sumBuckets.uniqueBuckets, sumBuckets.uniqueValues, barColors);
 
         // Calls the add_canvas_to_html function.
         add_canvas_to_html("sample", "bucket_chart_area");
@@ -51,6 +53,42 @@ document.addEventListener("DOMContentLoaded", function () {
         reset_fields();
     });
 });
+
+/**
+ * Sum the bucket duplicate bucket values, to avoid multiple chart labels with the same name.
+ * @param bucketValues An array of bucket names entered by ther user.
+ * @param valueValues An array of inputted values, entered by the user.
+ * @returns An object that contains the unique bucket and label names.
+ */
+
+function sum_bucket_values(bucketValues, valueValues) {
+
+    // Initialise the arrays that will hold the unique values
+    uniqueBuckets = [];
+    uniqueValues = [];
+
+    // Iterate through both bucket name and value arrays
+    for (var i = 0; i < bucketValues.length; i++) {
+
+        // If the bucket name is unique then add both value and bucket name to new arrays
+        if (!uniqueBuckets.includes(bucketValues[i])) {
+            uniqueBuckets.push(bucketValues[i])
+            uniqueValues.push(valueValues[i])
+
+        // If the bucket name is unot unique then update the value of that bucket name
+        } else {
+            arrayPos = uniqueBuckets.indexOf(bucketValues[i])
+            uniqueValues[arrayPos] = String(Number(uniqueValues[arrayPos]) + Number(valueValues[i]));
+        }
+    }
+
+    // retrun the unique bucket and unique vallue arrays
+    return {
+        uniqueBuckets,
+        uniqueValues
+    };
+
+}
 
 /**
  * Adds the canvas required to show the chart, to the HTML, in a DIV.
@@ -193,7 +231,7 @@ function add_new_input() {
     // Add the label element to the select column
     selectCol.appendChild(label);
 
-    // Add tje select column element to the row element
+    // Add the select column element to the row element
     row.appendChild(selectCol);
 
 
