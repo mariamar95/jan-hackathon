@@ -17,25 +17,19 @@ document.addEventListener("DOMContentLoaded", function () {
         create_input_table("table_area", tableSelect, tableLabels, tableValue);
 
         sumBuckets = sum_bucket_values(tableSelect, tableValue);
-
-        // Assigns the chart Colours
-        var barColors = [
-            "#b91d47",
-            "#00aba9",
-            "#2b5797",
-            "#e8c3b9",
-            "#1e7145"
-        ];
+        colourSort = match_color_to_bucket(sumBuckets.uniqueBuckets);
 
         // Calls the add_canvas_to_html function.
         add_canvas_to_html("spending", "chart_area");
         // Calls the create_chart function.
-        create_chart("spending", "Your Bucket Breakdown", sumBuckets.uniqueBuckets, sumBuckets.uniqueValues, barColors);
+        create_chart("spending", "Your Bucket Breakdown", sumBuckets.uniqueBuckets, sumBuckets.uniqueValues, colourSort);
 
         // Calls the add_canvas_to_html function.
         add_canvas_to_html("sample", "bucket_chart_area");
+
+        sampleColourSort = match_color_to_bucket(["Expenses", "Emergency", "Investment", "Learning", "Fun"]);
         // Calls the create_chart function.
-        create_chart("sample", "5 Bucket Theory Breakdown", ["Expenses", "Emergency", "Investment", "Learning", "Fun"], [60, 10, 10, 10, 10], barColors);
+        create_chart("sample", "5 Bucket Theory Breakdown", ["Expenses", "Emergency", "Investment", "Learning", "Fun"], [60, 10, 10, 10, 10], sampleColourSort);
     });
 
     // Checks to see if the add user input row button has been clicked
@@ -55,12 +49,35 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /**
+ * Assigns the correct colour based on the name of the bucket.
+ * @param buckets An array of bucket names entered by ther user.
+ * @returns The array of colours that are sorted to match the bucket name.
+ */
+function match_color_to_bucket(buckets){
+
+    // Create a map that maps the bucket name to the colours
+    const colors = new Map();
+    colors.set("Expenses", "#b91d47");
+    colors.set("Emergency", "#00aba9");
+    colors.set("Investment", "#2b5797");
+    colors.set("Learning", "#e8c3b9");
+    colors.set("Fun", "#1e7145");
+
+    // Add the colors in the same order as the bucket values
+    chartColor = [];
+    for (var i = 0; i < buckets.length; i++) {
+        chartColor.push(colors.get(buckets[i]))
+    }
+
+    return chartColor
+}
+
+/**
  * Sum the bucket duplicate bucket values, to avoid multiple chart labels with the same name.
  * @param bucketValues An array of bucket names entered by ther user.
  * @param valueValues An array of inputted values, entered by the user.
  * @returns An object that contains the unique bucket and label names.
  */
-
 function sum_bucket_values(bucketValues, valueValues) {
 
     // Initialise the arrays that will hold the unique values
@@ -82,7 +99,7 @@ function sum_bucket_values(bucketValues, valueValues) {
         }
     }
 
-    // retrun the unique bucket and unique vallue arrays
+    // Retrun the unique bucket and unique value arrays
     return {
         uniqueBuckets,
         uniqueValues
