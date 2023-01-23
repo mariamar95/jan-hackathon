@@ -33,7 +33,6 @@ Users need to enter their income, select their percentage ratio and the finance 
     - [Calculator ](#calculator--1)
     - [Tips Page ](#tips-page--1)
     - [About Page ](#about-page--1)
-  - [Database schema](#database-schema)
   - [Style and colours](#style-and-colours)
     - [Color Palette ](#color-palette-)
     - [Typography](#typography)
@@ -72,7 +71,7 @@ Users need to enter their income, select their percentage ratio and the finance 
 - To use an accessible site that accounts for all users (colour-blindness, screen readers).
 
 #### Secondary Goals:
-- I want to be able to customise the label names on the charts.
+- I want to be able to customize the label names on the charts.
 - I want to see a comparison of my spending / saving compared to the recommendations (5 bucket principal).
 
 #### Tertiary Goals:
@@ -105,11 +104,7 @@ Users need to enter their income, select their percentage ratio and the finance 
 
 [Back to top](#Table-of-contents)
 
----
 
-### Database schema
-
-[Back to top](#Table-of-contents)
 
 ---
 
@@ -153,7 +148,7 @@ The fonts used are [Open Sans](https://fonts.google.com/specimen/Open+Sans?query
 ---
 ### Calculator Page
 - The calculator consist of input fields on the left which have a drop down feature. This allows the user to select the type of bucket/category they would like to add amount to. The middle input field act as a label to the value input which is located on the right. For example the user can select from the drop down input field on the left the category expenses, then add a label rent and type in the amount on the right. This is then followed by the buttons of Submit, Reset or Add.
-The Submit button would display the user a graph showing their spendings in categories. The reset button will clear the form. The add button will add another row of input. 
+The Submit button would display the user a graph showing their spending in categories. The reset button will clear the form. The add button will add another row of input. 
 
 ![Image of Calculator Page](./assets/imgs/mockups/features/calculator-feature.PNG)
 
@@ -161,7 +156,7 @@ The Submit button would display the user a graph showing their spendings in cate
 
 ---
 ### Tips Page
-- The Tips page consist of carefully selected and presented information for the user for better money management. On the left there is a callapsible list with 5 tips followed by image representing saving. On the right there is more information about credit card usage.
+- The Tips page consist of carefully selected and presented information for the user for better money management. On the left there is a collapsible list with 5 tips followed by image representing saving. On the right there is more information about credit card usage.
 
 ![Image of Calculator Page](./assets/imgs/mockups/features/tips-feature.PNG)
 
@@ -222,8 +217,8 @@ The Submit button would display the user a graph showing their spendings in cate
 
 ## Languages
 - HTML - used to build the main structure of the website.
-- [Materialize Framework](https://materializecss.com/) - used throughout the website for layout and styling.
 - CSS - custom written CSS was used as an addition to Materialize. 
+- [Materialize Framework](https://materializecss.com/) - used throughout the website for layout and styling.
 - JavaScript - was used to create functionality for the calculator.
 - [Jquery](https://jquery.com/)
 
