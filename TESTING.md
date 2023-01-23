@@ -18,8 +18,18 @@
 
 ## Automated Testing:
 ### W3C Validator
+The W3C Validator was used to validate all HTML files used in the project. The results are shown below:
 
-
+- index.html - No errors or warnings to show.
+- 404.html - No errors or warnings to show.
+- about.html - No errors or warnings to show.
+- team.html - No errors or warnings to show.
+- tips.html:
+    - **Description:** Bad value `100%` for attribute `height` and `width` on element `img`: Expected a digit but saw `%` instead.
+    - **Cause:** This is caused by some styling on inline styling on the element using the incorrect syntax
+- calculate.html:
+    - **Description:** Duplicate ID `label_name` and `money_value`.
+    - **Cause:** The validation warnigns are cuased by the labels and inputs using ID's. As the DOM creates these values, the ID's are duplicated, this could be fixed by incrementing the ID number.
 ### Lighthouse
 
 
