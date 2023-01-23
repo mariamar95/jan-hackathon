@@ -17,7 +17,7 @@ main {
 }
 
 .title {
-  font-family: Playfair, 'Times New Roman', Times;
+  font-family: Playfair, 'Times New Roman', Times !important;
   color: #332a7c;
 }
 
@@ -144,4 +144,10 @@ nav a {
 
 #spending, #sample {
   margin: auto;
+}
+
+.bucket-cal {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
 }
