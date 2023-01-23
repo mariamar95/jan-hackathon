@@ -21,6 +21,8 @@ main {
   color: #332a7c;
 }
 
+
+
 p {
   font-family: Open Sans, 'Times New Roman', Times;
 }
@@ -150,4 +152,5 @@ nav a {
   width: max-content;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 15px;
 }
