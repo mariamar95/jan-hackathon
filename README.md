@@ -276,6 +276,9 @@ Find more [here](https://docs.github.com/en/repositories/creating-and-managing-r
 ## Credits
 - [CSS Tricks](https://css-tricks.com/css-link-hover-effects/) was used for inspiration for the hover effect on the nav.
 - [CodeVille](https://www.youtube.com/watch?v=C-qi-z8phTM&ab_channel=CodesVille) Currency Converter
+- FavIcon
+    - [Source](https://www.clipartmax.com/download/m2H7i8A0m2G6G6H7_money-flat-icon-ecoverauthority-logo-homepage/ )
+    - [Processed at 'favicon-converter'](https://favicon.io/favicon-converter/)
 
 ### Content
 
