@@ -1,6 +1,6 @@
 [5 Bucket Money Management](https://mariamar95.github.io/jan-hackathon/)
 
-During our brainstorm meeting, we analyzed the strengths of the team and we discovered that we are stronger at front-end development. Which led us to the decision to focus primarily on a frontend based project to make sure that everyone from the team is included and can contribute to the project.
+During our brainstorm meeting, we analyzed the strengths of the team and we discovered that we are stronger at front-end development. Which led us to the decision to focus primarily on a front-end based project to make sure that everyone from the team is included and can contribute to the project.
 As a team, we discussed few different ideas for this project and we all decided that we would like to take the 5 Bucket Money Management Concept and turn it into real life and fully usable project.
 
 The Savvy Savers Application, based on Dan Lok's [5 Bucket Money Management Concept](https://medium.datadriveninvestor.com/how-to-manage-money-5b490e9d3d63), is a finance calculator that displays a breakdown of annual spending.
@@ -33,7 +33,6 @@ Users need to enter their income, select their percentage ratio and the finance 
     - [Calculator ](#calculator--1)
     - [Tips Page ](#tips-page--1)
     - [About Page ](#about-page--1)
-  - [Database schema](#database-schema)
   - [Style and colours](#style-and-colours)
     - [Color Palette ](#color-palette-)
     - [Typography](#typography)
@@ -72,8 +71,8 @@ Users need to enter their income, select their percentage ratio and the finance 
 - To use an accessible site that accounts for all users (colour-blindness, screen readers).
 
 #### Secondary Goals:
-- I want to be able to customise the label names on the charts.
-- I want to see a comparison of my spending / saving compared to the recommendations (5 bucket principal).
+- I want to be able to customize the label names on the charts.
+- I want to see a comparison of my spending / saving compared to the recommendations (5 Bucket Principle).
 
 #### Tertiary Goals:
 - I want to be able to save the charts to view later (download as PDF).
@@ -105,11 +104,7 @@ Users need to enter their income, select their percentage ratio and the finance 
 
 [Back to top](#Table-of-contents)
 
----
 
-### Database schema
-
-[Back to top](#Table-of-contents)
 
 ---
 
@@ -153,7 +148,7 @@ The fonts used are [Open Sans](https://fonts.google.com/specimen/Open+Sans?query
 ---
 ### Calculator Page
 - The calculator consist of input fields on the left which have a drop down feature. This allows the user to select the type of bucket/category they would like to add amount to. The middle input field act as a label to the value input which is located on the right. For example the user can select from the drop down input field on the left the category expenses, then add a label rent and type in the amount on the right. This is then followed by the buttons of Submit, Reset or Add.
-The Submit button would display the user a graph showing their spendings in categories. The reset button will clear the form. The add button will add another row of input. 
+The Submit button would display the user a graph showing their spending in categories. The reset button will clear the form. The add button will add another row of input. 
 
 ![Image of Calculator Page](./assets/imgs/mockups/features/calculator-feature.PNG)
 
@@ -161,7 +156,7 @@ The Submit button would display the user a graph showing their spendings in cate
 
 ---
 ### Tips Page
-- The Tips page consist of carefully selected and presented information for the user for better money management. On the left there is a callapsible list with 5 tips followed by image representing saving. On the right there is more information about credit card usage.
+- The Tips page consist of carefully selected and presented information for the user for better money management. On the left there is a collapsible list with 5 tips followed by image representing saving. On the right there is more information about credit card usage.
 
 ![Image of Calculator Page](./assets/imgs/mockups/features/tips-feature.PNG)
 
@@ -222,12 +217,10 @@ The Submit button would display the user a graph showing their spendings in cate
 
 ## Languages
 - HTML - used to build the main structure of the website.
-- [Materialize Framework](https://materializecss.com/) - used throughout the website for layout and styling.
 - CSS - custom written CSS was used as an addition to Materialize. 
+- [Materialize Framework](https://materializecss.com/) - used throughout the website for layout and styling.
 - JavaScript - was used to create functionality for the calculator.
 - [Jquery](https://jquery.com/)
-
-
 
 [Back to top](#Table-of-contents)
 
@@ -283,6 +276,9 @@ Find more [here](https://docs.github.com/en/repositories/creating-and-managing-r
 ## Credits
 - [CSS Tricks](https://css-tricks.com/css-link-hover-effects/) was used for inspiration for the hover effect on the nav.
 - [CodeVille](https://www.youtube.com/watch?v=C-qi-z8phTM&ab_channel=CodesVille) Currency Converter
+- FavIcon
+    - [Source](https://www.clipartmax.com/download/m2H7i8A0m2G6G6H7_money-flat-icon-ecoverauthority-logo-homepage/ )
+    - [Processed at 'favicon-converter'](https://favicon.io/favicon-converter/)
 
 ### Content
 
