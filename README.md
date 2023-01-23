@@ -52,13 +52,11 @@ We decided to the it a bit further and create a "Buckets Breakdown" calculator w
   - [Technologies Used](#technologies-used)
   - [Languages](#languages)
   - [Testing](#testing)
-    - [Found bugs](#found-bugs)
   - [Deployment](#deployment)
     - [**GitHub Pages**](#github-pages)
     - [**How to deploy GitHub Pages**](#how-to-deploy-github-pages)
     - [**Cloning the repository**](#cloning-the-repository)
   - [Credits](#credits)
-    - [Content](#content)
     - [Acknowledgements](#acknowledgements)
   - [\*Disclaimer: This Project was created for January's Hackathon. It should not be taken as actual financial advice.](#disclaimer-this-project-was-created-for-januarys-hackathon-it-should-not-be-taken-as-actual-financial-advice)
 
@@ -69,19 +67,19 @@ We decided to the it a bit further and create a "Buckets Breakdown" calculator w
 ---
 
 ### User Stories
-#### Primary Goals:
-- To be able to use the site on different screen sizes (responsiveness).
-- To see an easy to read breakdown of my spending (chart.JS)
-- To use an accessible site that accounts for all users (colour-blindness, screen readers).
+  #### Primary Goals:
+  - To be able to use the site on different screen sizes (responsiveness).
+  - To see an easy to read breakdown of my spending (chart.JS)
+  - To use an accessible site that accounts for all users (colour-blindness, screen readers).
 
-#### Secondary Goals:
-- I want to be able to customize the label names on the charts.
-- I want to see a comparison of my spending / saving compared to the recommendations (5 Bucket Principle).
+  #### Secondary Goals:
+  - I want to be able to customize the label names on the charts.
+  - I want to see a comparison of my spending / saving compared to the recommendations (5 Bucket Principle).
 
-#### Tertiary Goals:
-- I want to be able to save the charts to view later (download as PDF).
-- I want to be able to use this site in a range of countries (currency converter API)
-- I want to be able to access guides on saving and spending less.
+  #### Tertiary Goals:
+  - I want to be able to save the charts to view later (download as PDF).
+  - I want to be able to use this site in a range of countries (currency converter API)
+  - I want to be able to access guides on saving and spending less.
 
 [Back to top](#Table-of-contents)
 ---
@@ -151,10 +149,17 @@ The fonts used are [Open Sans](https://fonts.google.com/specimen/Open+Sans?query
 
 ---
 ### Calculator Page
-- The calculator consist of input fields on the left which have a drop down feature. This allows the user to select the type of bucket/category they would like to add amount to. The middle input field act as a label to the value input which is located on the right. For example the user can select from the drop down input field on the left the category expenses, then add a label rent and type in the amount on the right. This is then followed by the buttons of Submit, Reset or Add.
-The Submit button would display the user a graph showing their spending in categories. The reset button will clear the form. The add button will add another row of input. 
+- The calculator page has 3 sections:
+  1. The 5 Bucket Calculator
+      ![](assets/imgs/5bucket.png)
+      Users can enter their salary and click calculate to find out how much money has to go in each bucket based on Dan Lok's theory
+  2. The Buckets Breakdown 
+     ![](assets/imgs/bucketsbd.png)
+     Users can enter all their regular payments to track how their money is spend. Once they click calculate they will be presented with a chart of their own buckets compared to Lok's theory.
+     ![](assets/imgs/chart.png)
+  3. The Currency Convertor
+     ![](assets/imgs/currency-convertor.png)
 
-![Image of Calculator Page](./assets/imgs/mockups/features/calculator-feature.PNG)
 
 [Back to top](#Table-of-contents)
 
@@ -183,23 +188,15 @@ The Submit button would display the user a graph showing their spending in categ
 ---
 ### Future Features
 
-- #### Favorite Feature 1
+- #### Download Data
+  - Users have the option to export and download a pdf file of their data after using the calculator.
+- #### User Login
+  - Users have the option to create an account where they can easily save and adjust their details.
+- #### Convert Currency
+  - Once the user has used the calculator their will have they option to automatically convert all figures to a different currency. As we did not have the time to add this functionality on the finished app, we decided to add a separate currency convertor bellow the calculators.
 
-[Back to top](#Table-of-contents)
-
----
-
-- #### Favorite Feature 2
-
-[Back to top](#Table-of-contents)
-
----
-
-- #### List of other future features
-
-  - ff1
-  - ff2
-  - ff3
+- #### Link your Banking App
+  - Users have the option to link their banking app and every time they make a transaction it is automatically added to their Buckets Breakdown. This makes it easier for users to keep a track of all speedings without having to manually enter it.
 
 [Back to top](#Table-of-contents)
 
@@ -232,24 +229,9 @@ The Submit button would display the user a graph showing their spending in categ
 
 ## Testing
 
-Testing was done...
-
-### Found bugs
-
-- #### bug1
-
-![bug1](img/bug1)
-
-- #### bug2
-
-![bug2](img/bug2)
-
-- #### bug3
-
-![bug1](img/bug3)
+[All testing can be found here](TESTING.md)
 
 ---
-
 ## Deployment
 ### **GitHub Pages**
 The website is deployed using GitHub pages. It automatically updates new commits as they are pushed to the repository.
@@ -284,10 +266,9 @@ Find more [here](https://docs.github.com/en/repositories/creating-and-managing-r
     - [Source](https://www.clipartmax.com/download/m2H7i8A0m2G6G6H7_money-flat-icon-ecoverauthority-logo-homepage/ )
     - [Processed at 'favicon-converter'](https://favicon.io/favicon-converter/)
 
-### Content
 
 ### Acknowledgements
-- The Hackathon Team - Big thank you for making Hackathon happen. It was great experience. 
+- The Hackathon Team - Big thank you for making this Hackathon happen. It was great experience. 
 
 
 [Back to top](#Table-of-contents)
