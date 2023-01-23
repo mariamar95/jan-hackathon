@@ -141,3 +141,7 @@ nav a {
   padding: 2rem;
   border-radius: 15px;
 }
+
+#spending, #sample {
+  margin: auto;
+}
